@@ -27,9 +27,11 @@ document.getElementById('pokemonForm').addEventListener('submit', function(e) {
               <div class="pokemon-card">
                   <h2 class="pokemon-name">${data.name} (#${data.id})</h2>
                   <img src="${data.sprites.front_default}" alt="${data.name}">
-                  <p><strong>Taille :</strong> ${data.height / 10} m</p>
-                  <p><strong>Poids :</strong> ${data.weight / 10} kg</p>
-                  <p><strong>Types :</strong> ${data.types.map(t => t.type.name).join(', ')}</p>
+                  <div class="pokemon-taille">
+                    <p><strong>Taille :</strong> ${data.height / 10} m</p>
+                    <p><strong>Poids :</strong> ${data.weight / 10} kg</p>
+                    <p><strong>Types :</strong> ${data.types.map(t => t.type.name).join(', ')}</p>
+                  </div>
                   <div class="pokemon-stats">
                     <h3>Statistiques :</h3>
                     <ul>
