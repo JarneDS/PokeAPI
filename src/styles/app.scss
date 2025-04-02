@@ -1,2 +1,37 @@
 @import 'utils/variables';
 @import 'components/type';
+
+body {
+    margin: 40px;
+}
+
+#pokemonInput {
+    width: 20%;
+    padding: 10px;
+}
+
+.button-submit {
+    padding: 10px;
+}
+
+#informations {
+    background-color: aquamarine;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2, p, .pokemon-stats {
+    margin: 0;
+    padding: 20px;
+}
+
+img {
+    width: 90%;
+    margin: 0 5%;
+}
